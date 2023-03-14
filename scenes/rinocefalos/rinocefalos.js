@@ -3,6 +3,6 @@ import { Button, StyleSheet, Text, View } from 'react-native';
 
 export default function Rinocefalos() {
     return(
-        <View>Rinocefalos</View>
+        <View><Text>Rinocefalos</Text></View>
     )
 }

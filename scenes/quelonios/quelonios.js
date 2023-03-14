@@ -3,6 +3,10 @@ import { Button, StyleSheet, Text, View } from 'react-native';
 
 export default function Quelonios() {
     return(
-        <View>Quelonios</View>
+        <View>
+            <Text>
+            Quelonios
+            </Text>
+        </View>
     )
 }

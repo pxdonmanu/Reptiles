@@ -10,7 +10,7 @@ import Quelonios from './scenes/quelonios/quelonios';
 import Rinocefalos from './scenes/rinocefalos/rinocefalos';
 import Squamatas from './scenes/squamatas/squamatas';
 
-export default function HomeScreen() {
+export function HomeScreen() {
   return (
     <View style={styles.container}>    
       <Header /> 
@@ -22,7 +22,7 @@ export default function HomeScreen() {
 
 const Stack = createNativeStackNavigator();
 
-export function App() {
+export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
