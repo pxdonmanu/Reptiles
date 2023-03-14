@@ -1,12 +1,38 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { Button, StyleSheet, Text, View } from 'react-native';
+import Header from './components/Header';
+import Buttons from './components/Buttons';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Cocodrilos from './scenes/cocodrilos/cocodrilos';
+import Quelonios from './scenes/quelonios/quelonios';
+import Rinocefalos from './scenes/rinocefalos/rinocefalos';
+import Squamatas from './scenes/squamatas/squamatas';
 
-export default function App() {
+export default function HomeScreen() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <View style={styles.container}>    
+      <Header /> 
+      <Buttons /> 
       <StatusBar style="auto" />
     </View>
+  );
+}
+
+const Stack = createNativeStackNavigator();
+
+export function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Cocodrilos" component={Cocodrilos}/>
+        <Stack.Screen name="Quelonios" component={Quelonios}/>
+        <Stack.Screen name="Squamatas" component={Squamatas}/>
+        <Stack.Screen name="Rinocefalos" component={Rinocefalos}/>
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
@@ -14,7 +40,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
