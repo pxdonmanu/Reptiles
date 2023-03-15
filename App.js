@@ -13,7 +13,7 @@ import Squamatas from './scenes/squamatas/squamatas';
 export function HomeScreen() {
   return (
     <View style={styles.container}>    
-      <Header /> 
+      <Header name={'Reptiles'}/> 
       <Buttons /> 
       <StatusBar style="auto" />
     </View>

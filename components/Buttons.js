@@ -33,52 +33,33 @@ export default function Buttons() {
                     </TouchableOpacity>
                 )
             })}
-            {/* <Button
-                title="Cocodrilos"
-                color="#3E9741"
-                accessibilityLabel="Cocodrilos"
-                style={style.btn1}
-
-            />
-            <Button
-                title="Squamatas"
-                color="#3E9741"
-                accessibilityLabel="Squamatas"
-                style={style.btn2}
-            />
-            <Button
-                title="Rinocefalos"
-                color="#3E9741"
-                accessibilityLabel="Rinocefalos"
-                style={style.btn3}
-            />
-            <Button
-                title="Quelonios"
-                color="#3E9741"
-                accessibilityLabel="Quelonios"
-                style={style.btn4}
-            /> */}
         </View>
+
     )
 }
 
 const style = StyleSheet.create({
     conteinerBtns: {
-        backgroundColor: '#dad',
+        backgroundColor: '#C9FFC1',
         width: '100%',
-        height: '77%',
+        height: '85%',
         alignItems: 'center',
         justifyContent: 'center',
     },
     btn: {
         backgroundColor: "green",
-        padding: 10,
+        padding: 30,
         borderRadius: 50,
         marginVertical: 15
     },
     btnTxt: {
         color: "white",
-        fontSize: 18,
+        fontSize: 30,
         fontWeight: "bold"
+    },
+    bottom:{
+        width:'100%',
+        height: '8%',
+        backgroundColor: '#eee'
     }
 });
